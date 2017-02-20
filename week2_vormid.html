@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vormide kasutus</title>
+</head>
+<body>
+	<form action="week2_vormid.html" method="GET">
+		<table>
+			<caption>Kauba lisamise vorm</caption>
+				<tr>
+					<th>
+						Nimi:
+					</th>
+					<td>
+						<input type="text" name="product_name" placeholder="Kauba nimi">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Kogus:
+					</th>
+					<td>
+						<input type="text" name="product_qty" placeholder="Kauba kogus">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Pakendis:
+					</th>
+					<td>
+						<input type="checkbox" name="product_package">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Päritolu:
+					</th>
+					<td>
+						<input type="radio" name="supplier" id="local">
+						<label for="local">Kohalik</label>
+					</td>
+					<td>
+						<input type="radio" name="supplier" id="foreign">
+						<label for="foreign">Välismaine</label>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Lisamise kuupäev:
+					</th>
+					<td>
+						<input type="date" name="product_date" placeholder="yyyy/mm/dd">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Märkused:
+					</th>
+					<td>
+						<input type="textarea" name="additional_info" placeholder="Lisainfo kaubakohta">
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<input type="submit" name="send_product_data" value="Lisa">
+					</th>
+				</tr>
+		</table>
+	</form>
+</body>
+</html>
