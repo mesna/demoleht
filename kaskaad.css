@@ -21,7 +21,8 @@ li:hover{
     border-style: dotted;
     text-align: right;
 }
-p{
+p{  
+    
     border: 2px dashed black;
     font-size: 14px;
     font-family: cursive;
