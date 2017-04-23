@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Target</title>
+        <link rel="stylesheet" type="text/css" href="css_target.css">
+    </head>
+    <body>
+        <img src="part.png" />
+        <div id="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+        <script type="text/javascript">
+            window.onload = function(){
+                var target = document.getElementById('parent');
+                target.onclick = function(){
+                    var asukoht = Math.random() * 200 + 150;
+                    target.style.left = asukoht * 2 + "px";
+                    target.style.top = asukoht + "px";
+                }
+
+            }
+        </script>
+    </body>
+</html>
